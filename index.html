@@ -11,15 +11,26 @@
     <script src="js.js"></script>
     <title>twistynado's site</title>
 </head>
-<body>
-    <div class="main">
-        <h2>twistynado.com welcomes you!</h2>
-        <p>hi! i'm twistynado, twisty for short. i like messing around with arduino kits and i also enjoy programming. i like tech.</p>
+<body onload="checkBlur(); checkOpacity(); checkHover(); checkZoom(); startTime()">
+    <nav>
+        <button onclick="scrollto('.main')">welcome</button>
         <button onclick="scrollto('.moreinfo')">more info</button>
         <button onclick="scrollto('.photography')">photography</button>
         <button onclick="scrollto('.projects')">projects</button>
         <button onclick="scrollto('.downloads')">downloads</button>
-        <p class="footer">last updated 12/18/2023</p>
+        <button onclick="scrollto('.settings')">settings</button>
+        <p class="clock">12:00</p>
+    </nav>
+
+    <div class="main">
+        <h2>twistynado.com welcomes you!</h2>
+        <p>hi! i'm twistynado, twisty for short. i like messing around with arduino kits and i also enjoy programming. i like tech.</p>
+        <button onclick="scrollto('.moreinfo')" class="pr">more info</button>
+        <button onclick="scrollto('.photography')" class="pr">photography</button>
+        <button onclick="scrollto('.projects')" class="pr">projects</button>
+        <button onclick="scrollto('.downloads')" class="pr">downloads</button>
+        <button onclick="scrollto('.settings')" class="pr">settings</button>
+        <p class="footer">last updated 12/21/2023</p>
     </div>
 
     <div class="moreinfo">
@@ -31,11 +42,11 @@
     <div class="photography">
         <h2>my photography</h2>
         <p>heres some of my photography!</p>
-        <div class="page">
+        <section class="page">
             <img src="files/06060008.JPG" class="phot">
             <img src="files/20230613_200051.jpg" class="phot">
             <img src="files/20230613_200424.jpg" class="phot">
-        </div>
+        </section>
         <button class="btt" onclick="scrollto('.main')">back to top</button>
     </div>
 
@@ -55,12 +66,32 @@
     <div class="downloads">
         <h2>downloads</h2>
         <p>here are some downloads, ranging from ISO files to EXE files.</p>
+        <button class="pr" onclick="downloadFiles('cbm')">cze balloon maker</button>
+        <button class="pr" onclick="downloadFiles('ttt')">tic tac toe</button>
         <button class="pr" disabled>Nothing here yet...</button>
         <button class="pr" disabled>Nothing here yet...</button>
         <button class="pr" disabled>Nothing here yet...</button>
         <button class="pr" disabled>Nothing here yet...</button>
-        <button class="pr" disabled>Nothing here yet...</button>
-        <button class="pr" disabled>Nothing here yet...</button>
+        <br>
+        <button class="btt" onclick="scrollto('.main')">back to top</button>
+    </div>
+
+    <div class="settings">
+        <h2>settings</h2>
+        <p>you can adjust settings here to fit your needs.</p>
+        <section class="page" style="text-align: left;">
+            <p class="inline">transparency</p>
+            <input type="checkbox" id="opacityCh" checked onclick="checkOpacity(); checkBlur()">
+            <br>
+            <p class="inline">blur</p>
+            <input type="checkbox" id="blurCh" checked onclick="checkBlur();">
+            <br>
+            <p class="inline">zoom</p>
+            <input type="checkbox" id="zoomCh" checked onclick="checkZoom();">
+            <br>
+            <p class="inline">hover effect</p>
+            <input type="checkbox" id="hoverCh" checked onclick="checkHover();">
+        </section>
         <br>
         <button class="btt" onclick="scrollto('.main')">back to top</button>
     </div>
