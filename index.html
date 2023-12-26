@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js.js"></script>
@@ -16,38 +16,38 @@
 
 <body onload="checkBlur(); checkOpacity(); checkHover(); checkZoom(); startTime()">
     <nav>
-        <button onclick="scrollto('.main')">welcome</button>
-        <button onclick="scrollto('.moreinfo')">more info</button>
-        <button onclick="scrollto('.photography')">photography</button>
-        <button onclick="scrollto('.projects')">projects</button>
-        <button onclick="scrollto('.downloads')">downloads</button>
-        <button onclick="scrollto('.settings')">settings</button>
+        <button onclick="scrollto('.main')">Welcome</button>
+        <button onclick="scrollto('.moreinfo')">More info</button>
+        <button onclick="scrollto('.photography')">Photography</button>
+        <button onclick="scrollto('.projects')">Projects</button>
+        <button onclick="scrollto('.downloads')">Downloads</button>
+        <button onclick="scrollto('.settings')">Settings</button>
         <p class="clock">12:00</p>
     </nav>
 
     <div class="main">
         <h2>twistynado.com welcomes you!</h2>
-        <p>hi! i'm twistynado, twisty for short. i like messing around with arduino kits and i also enjoy programming. i
+        <p>Hi! I'm twistynado, twisty for short. I like messing around with arduino kits and I also enjoy programming. I
             like tech.</p>
-        <button onclick="scrollto('.moreinfo')" class="pr">more info</button>
-        <button onclick="scrollto('.photography')" class="pr">photography</button>
-        <button onclick="scrollto('.projects')" class="pr">projects</button>
-        <button onclick="scrollto('.downloads')" class="pr">downloads</button>
-        <button onclick="scrollto('.settings')" class="pr">settings</button>
-        <p class="footer">last updated 12/26/2023</p>
+        <button onclick="scrollto('.moreinfo')" class="pr">More info</button>
+        <button onclick="scrollto('.photography')" class="pr">Photography</button>
+        <button onclick="scrollto('.projects')" class="pr">Projects</button>
+        <button onclick="scrollto('.downloads')" class="pr">Downloads</button>
+        <button onclick="scrollto('.settings')" class="pr">Settings</button>
+        <p class="footer">Last updated 12/26/2023</p>
     </div>
 
     <div class="moreinfo">
-        <h2>more info</h2>
-        <p>i'm 13 and i enjoy tech. i own 4 computers and an xbox 360. i actually have an old CRT monitor! it does
-            infact work. i post on youtube. i have an arduino breadboard with an led light and a screen on my desk
+        <h2>More info</h2>
+        <p>I'm 13 and I enjoy tech. I own 4 computers and an Xbox 360. I actually have an old CRT monitor! it does
+            infact work. I post on youtube. I have an arduino breadboard with an led light and a screen on my desk
             telling me the time.</p>
-        <button class="btt" onclick="scrollto('.main')">back to top</button>
+        <button class="btt" onclick="scrollto('.main')">Back to top</button>
     </div>
 
     <div class="photography">
-        <h2>my photography</h2>
-        <p>heres some of my photography!</p>
+        <h2>My photography</h2>
+        <p>Here's some of my photography!</p>
         <section class="page">
             <img src="files/06060008.JPG" class="phot" s>
             <img src="files/20230816_142008.jpg" class="phot">
@@ -61,12 +61,12 @@
             <img src="files/IMG-20230812-WA0011.jpeg" class="phot">
             <img src="files/IMG-20230812-WA0013.jpeg" class="phot">
         </section>
-        <button class="btt" onclick="scrollto('.main')">back to top</button>
+        <button class="btt" onclick="scrollto('.main')">Back to top</button>
     </div>
 
     <div class="projects">
-        <h2>projects</h2>
-        <p>here are some of my projects!</p>
+        <h2>Projects</h2>
+        <p>Here are some of my projects!</p>
         <button class="pr" onclick="location.href = 'https:\/\/twisty-nado.github.io/twistynado.com/'">Windows 11 in
             HTML</button>
         <button class="pr" disabled>Windows 7 in HTML</button>
@@ -78,40 +78,40 @@
         <button class="pr" onclick="location.href = 'https:\/\/twisty-nado.github.io/bluescreensimulator/'">Blue Screen
             Simulator</button>
         <br>
-        <button class="btt" onclick="scrollto('.main')">back to top</button>
+        <button class="btt" onclick="scrollto('.main')">Back to top</button>
     </div>
 
     <div class="downloads">
-        <h2>downloads</h2>
-        <p>here are some downloads, ranging from ISO files to EXE files.</p>
-        <button class="pr" onclick="downloadFiles('cbm')">cze balloon maker</button>
-        <button class="pr" onclick="downloadFiles('ttt')">tic tac toe</button>
+        <h2>Downloads</h2>
+        <p>Here are some downloads, ranging from ISO files to EXE files.</p>
+        <button class="pr" onclick="downloadFiles('cbm')">CzE balloon maker</button>
+        <button class="pr" onclick="downloadFiles('ttt')">Tic Tac Toe</button>
         <button class="pr" disabled>Nothing here yet...</button>
         <button class="pr" disabled>Nothing here yet...</button>
         <button class="pr" disabled>Nothing here yet...</button>
         <button class="pr" disabled>Nothing here yet...</button>
         <br>
-        <button class="btt" onclick="scrollto('.main')">back to top</button>
+        <button class="btt" onclick="scrollto('.main')">Back to top</button>
     </div>
 
     <div class="settings">
-        <h2>settings</h2>
-        <p>you can adjust settings here to fit your needs.</p>
+        <h2>Settings</h2>
+        <p>You can adjust settings here to fit your needs.</p>
         <section class="page" style="text-align: left;">
-            <p class="inline">transparency</p>
             <input type="checkbox" id="opacityCh" checked onclick="checkOpacity(); checkBlur()">
+            <p class="inline">Transparency</p>
             <br>
-            <p class="inline">blur</p>
             <input type="checkbox" id="blurCh" checked onclick="checkBlur();">
+            <p class="inline">Blur</p>
             <br>
-            <p class="inline">hover zoom</p>
             <input type="checkbox" id="zoomCh" checked onclick="checkZoom();">
+            <p class="inline">Hover Zoom</p>
             <br>
-            <p class="inline">hover shadow</p>
             <input type="checkbox" id="hoverCh" checked onclick="checkHover();">
+            <p class="inline">Hover Shadow</p>
         </section>
         <br>
-        <button class="btt" onclick="scrollto('.main')">back to top</button>
+        <button class="btt" onclick="scrollto('.main')">Back to top</button>
     </div>
 
     <section id="image-viewer">
