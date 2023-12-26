@@ -1,30 +1,11 @@
-@keyframes slide-in {
-    from {
-        left: 150%;
-    }
-
-    to {
-        left: 50%;
-    }
-}
-
-@keyframes slide-out {
-    from {
-        left: 50%;
-    }
-
-    to {
-        left: -50%;
-    }
-}
-
 :root {
-    /*--accent-color: var(--accent-color);*/
-    --accent-color: #eacffc;
-    --blur: 8px;
+    --accent-color: #233411;
+    --blur: 12px;
     --opacity: .6;
     --zoom: 105%;
     --hover: #ffffff65;
+    --color: white;
+    --max-width: 900px;
 }
 
 html {
@@ -35,7 +16,7 @@ html {
 
 body {
     font-family: 'Schoolbell', cursive;
-    background: url("files/20230613_200051.jpg") no-repeat center;
+    background: url("files/20230816_142044.jpg") no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     overflow-x: hidden;
@@ -86,7 +67,7 @@ body {
     display: block;
     margin-top: 64px;
     padding: 4px;
-    max-width: 600px;
+    max-width: var(--max-width);
     height: auto;
     position: relative;
     left: 50%;
@@ -95,6 +76,7 @@ body {
     backdrop-filter: blur(var(--blur));
     border-radius: 12px;
     box-shadow: 0 0 24px 2px rgba(0, 0, 0, .7);
+    color: var(--color);
 }
 
 button {
@@ -108,6 +90,7 @@ button {
     min-width: 128px;
     margin: 8px;
     transition: 0.1s;
+    color: var(--color);
 }
 
 button:hover {
@@ -125,10 +108,12 @@ button:active {
     min-height: 24px;
     min-width: 96px;
     font-size: small;
+    color: var(--color);
 }
 
 .pr {
     min-width: 172px;
+    color: var(--color);
 }
 
 .hidden {
@@ -140,6 +125,7 @@ button:active {
     bottom: -11px;
     left: 5px;
     font-size: x-small;
+    color: var(--color);
 }
 
 .photography::before {
@@ -159,7 +145,7 @@ button:active {
     vertical-align: top;
     margin-top: 16px;
     padding: 4px;
-    max-width: 600px;
+    max-width: var(--max-width);
     height: auto;
     position: relative;
     left: 50%;
@@ -168,6 +154,7 @@ button:active {
     backdrop-filter: blur(var(--blur));
     border-radius: 12px;
     box-shadow: 0 0 24px 2px rgba(0, 0, 0, .7);
+    color: var(--color);
     /*animation: slide-out 1s ease-in-out;*/
 }
 
@@ -179,25 +166,26 @@ button:active {
     border-radius: 6px;
     border: solid 1px rgb(36, 36, 36);
     box-shadow: 0 0 16px 2px rgba(255, 255, 255, 0.7);
+    color: var(--accent-color);
 }
 
 .phot {
-    width: 188px;
+    background: rgba(255, 255, 255, .6);
+    text-align: center;
+    border-radius: 6px;
+    border: solid 1px rgb(36, 36, 36);
+    width: 186px;
     height: 144px;
     object-fit: cover;
     display: inline;
-    cursor: zoom-in;
+    cursor: pointer;
     transition: 0.3s;
 }
 
 .phot:hover{
     z-index: 2;
-    transform: scale(1.5);
+    transform: scale(2);
     box-shadow: 0 0 24px 2px rgba(255, 255, 255, 0.7);
-}
-
-.dl {
-    margin-left: -60px;
 }
 
 .moreinfo::before {
@@ -217,7 +205,7 @@ button:active {
     vertical-align: top;
     margin-top: 16px;
     padding: 4px;
-    max-width: 600px;
+    max-width: var(--max-width);
     height: auto;
     position: relative;
     left: 50%;
@@ -226,6 +214,7 @@ button:active {
     backdrop-filter: blur(var(--blur));
     border-radius: 12px;
     box-shadow: 0 0 24px 2px rgba(0, 0, 0, .7);
+    color: var(--color);
     /*animation: slide-out 1s ease-in-out;*/
 }
 
@@ -246,7 +235,7 @@ button:active {
     vertical-align: top;
     margin-top: 16px;
     padding: 4px;
-    max-width: 600px;
+    max-width: var(--max-width);
     height: auto;
     position: relative;
     left: 50%;
@@ -255,6 +244,7 @@ button:active {
     backdrop-filter: blur(var(--blur));
     border-radius: 12px;
     box-shadow: 0 0 24px 2px rgba(0, 0, 0, .7);
+    color: var(--color);
     /*animation: slide-out 1s ease-in-out;*/
 }
 
@@ -275,7 +265,7 @@ button:active {
     vertical-align: top;
     margin-top: 16px;
     padding: 4px;
-    max-width: 600px;
+    max-width: var(--max-width);
     height: auto;
     position: relative;
     left: 50%;
@@ -284,6 +274,7 @@ button:active {
     backdrop-filter: blur(var(--blur));
     border-radius: 12px;
     box-shadow: 0 0 24px 2px rgba(0, 0, 0, .7);
+    color: var(--color);
     /*animation: slide-out 1s ease-in-out;*/
 }
 
@@ -305,7 +296,7 @@ button:active {
     margin-top: 16px;
     margin-bottom: 64px;
     padding: 4px;
-    max-width: 600px;
+    max-width: var(--max-width);
     height: auto;
     position: relative;
     left: 50%;
@@ -314,6 +305,7 @@ button:active {
     backdrop-filter: blur(var(--blur));
     border-radius: 12px;
     box-shadow: 0 0 24px 2px rgba(0, 0, 0, .7);
+    color: var(--color);
     /*animation: slide-out 1s ease-in-out;*/
 }
 
@@ -323,6 +315,7 @@ div::before {
 
 div {
     transition: .3s;
+    color: var(--color);
 }
 
 div:hover {
@@ -342,6 +335,7 @@ div:active{
 
 input {
     display: inline;
+    color: var(--color);
 }
 
 .inline {
@@ -373,6 +367,7 @@ nav{
     z-index: 1000000;
     backdrop-filter: blur(var(--blur));
     box-shadow: 0 0 24px 2px rgba(0, 0, 0, .7);
+    color: var(--color);
 }
 
 nav button{
@@ -384,6 +379,7 @@ nav button{
     box-shadow: none;
     font-size: smaller;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+    color: var(--color);
 }
 
 nav button:hover{
@@ -397,4 +393,55 @@ nav p{
     top: -10px;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
     font-size: smaller;
+    color: var(--color);
+}
+
+:disabled{
+    background: rgba(255, 255, 255, .6);
+    box-shadow: 0 0 12px -4px rgba(0, 0, 0, .7);
+    color: var(--accent-color);
+}
+
+#image-viewer::before{
+    background: var(--accent-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: var(--opacity);
+    z-index: -1;
+}
+
+#image-viewer {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: none;
+    backdrop-filter: blur(var(--blur));
+}
+
+.modal-content {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: block;
+    height: 80%;
+    box-shadow: 0 0 12px -4px rgba(0, 0, 0, .7);
+    border-radius: 12px;
+    border: solid 2px rgb(36, 36, 36);
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }
