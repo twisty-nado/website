@@ -51,7 +51,7 @@ function scrollto(w) {
 function checkBlur() {
     var check = document.getElementById("blurCh")
     if (check.checked) {
-        document.documentElement.style.setProperty("--blur", "12px")
+        document.documentElement.style.setProperty("--blur", "4px")
     } else {
         document.documentElement.style.setProperty("--blur", "0px")
     }
