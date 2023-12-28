@@ -93,6 +93,8 @@ function downloadFiles(f) {
         location.href = "https://github.com/twisty-nado/website/releases/download/downloads/cbm-1-0-2-b-c.exe"
     } else if (f == "ttt") {
         location.href = "https://github.com/twisty-nado/website/releases/download/downloads/tictactoe.exe"
+    } else if (f == "rm1"){
+        location.href = "https://github.com/twisty-nado/website/releases/download/downloadsv2/RAM.Meter.1.0.exe"
     }
 }
 
